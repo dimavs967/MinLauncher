@@ -9,6 +9,7 @@ lifecycleRuntimeKtx = "2.8.6"
 materialVersion = "1.12.0"
 kspVersion = "2.0.0-1.0.21"
 securityCrypto = "1.1.0-alpha06"
+serialization = "1.6.3"
 
 # Hilt
 androidx-hilt = "1.2.0"
@@ -48,6 +49,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 material = { module = "com.google.android.material:material", version.ref = "materialVersion" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 androidx-security-crypto = { module = "androidx.security:security-crypto", version.ref = "securityCrypto" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
 
 # Testing
 leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "leakcanaryAndroid" }
@@ -75,6 +77,7 @@ common = [
     "androidx-core-ktx",
     "material",
     "androidx-lifecycle-runtime-ktx",
+    "kotlinx-serialization-json"
 ]
 
 compose = [
